@@ -27,7 +27,6 @@ export class LogoutPage implements OnInit {
     this.authService.logOut().subscribe(
       (response:any) => {
         
-        console.log(response.success)
         if(response.success == 'true')  {
           this.router.navigate(['/login']);
         }
