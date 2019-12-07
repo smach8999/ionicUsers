@@ -25,6 +25,16 @@
           <ion-item>{{ user.email  }}</ion-item>
         </ion-list>
     
+      <!--  Edit or Delete User start -->
+      <!-- <div class= "User">
+          <div *ngIf="user">
+              <button [routerLink]="['/use-edit/', user._id]">Edit</button>
+              <button (click)="deleteUser(user._id)">Delete</button>
+        </div>
+      </div> -->
+      <!--  Edit or Delete User End -->
+
+
       </ion-card>
     
       <ion-fab vertical="bottom" horizontal="end">
